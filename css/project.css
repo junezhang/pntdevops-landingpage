@@ -1,0 +1,286 @@
+/* Webfont: Overpass-Reg */
+@font-face {
+    font-family: 'Overpass';
+    src: url('fonts/Overpass-Regular.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Overpass-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/Overpass-Regular.woff') format('woff'), /* Modern Browsers */
+         url('fonts/Overpass-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/Overpass-Regular.svg#Overpass-Regular') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: 600;
+    text-rendering: optimizeLegibility;
+}
+*{
+	  -webkit-box-sizing: border-box;
+	  -moz-box-sizing: border-box;
+  	box-sizing: border-box;
+  	margin: 0;
+  	padding: 0;
+}
+body{
+	font-family: 'Overpass',Helvetica,Arial,sans-serif;
+  font-size: 18px;
+  color: #1e1e1e;
+  background: #ccc;
+}
+
+/* header */
+header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.header-nobanner{
+  width: 100%;
+  background: url('../images/banner-bg.png') no-repeat center center;
+  background-size: cover cover;
+  position: static;
+}
+.header-container{
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+}
+.logo-container{
+  width: 250px;
+  height: 100px;
+  background: black;
+  opacity: 0.2;
+  padding-top: 20px;
+}
+.logo{
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+.logo-title{
+  position: absolute;
+  left: 0px;
+  top: 32px;
+  display: inline-block;
+  font-size: 26px;
+  margin-left: 20px;
+  color: white;
+}
+.nav{
+  position: absolute;
+  right: 0;
+  top: 38px;
+  font-size: 19px;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav ul li{
+  list-style: none;
+  display: inline-block;
+  margin-right: 25px;
+}
+a:link, a:visited{
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  color:#c00;
+}
+/* Project List */
+.project-container{
+  width: 100%;
+  background: url('../images/c1.PNG') center top;
+  background-size: cover cover;
+  height: auto;
+  padding: 30px 0;
+}
+
+.project-content{
+  width: 1170px;
+  margin: 0px auto;
+}
+.project-title{
+  font-size: 2.2rem;
+  color: #c00;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.projectlist{
+  margin: 2.2rem auto;
+}
+.project{
+  background: white;
+  width: 147px;
+  height: 140px;
+  padding: 10px;
+  float: left;
+  margin: 10px;
+}
+
+a:hover .project{
+  border: solid 3px #c00;
+  padding: 7px;
+}
+a:hover .intro{
+  color: #646464;
+}
+
+.project .intro{
+  font-size: 14px;
+  color: #aaa;
+  margin-top: 10px;
+}
+
+
+.bgimage-c2{
+  background: #f5f5f5;
+}
+
+.bgimage-c2 .project{
+  background: #eee;
+}
+.bgimage-c2 .project-title{
+  color: #0099bf;
+}
+
+
+.bgimage-c3{
+  background: url('../images/c1.png') center bottom;
+}
+.bgimage-c3 .project-title{
+  color: #3ca913;
+}
+
+
+/* carousel banner */
+.item{
+  height: 300px;
+}
+.item img{
+  width: 100%;
+}
+
+/* footer */
+footer{
+  width: 100%;
+  height: 100px;
+  background: black;
+  position: relative;
+}
+.footer{
+  width: 1170px;
+  padding-top: 20px;
+  margin: 0 auto;
+}
+.footer a:link, .footer a:visited{
+  color: #c00;
+}
+.footer a:hover{
+  color: white;
+}
+
+.footer-logo img{
+  width: 100px;
+  margin-top: 10px;
+}
+.footer-text{
+  text-align: right;
+  font-size: 12px;
+  color: white;
+  padding-top: 10px;
+}
+.copyright{
+  position: absolute;
+  left: 45%;
+  bottom: 10px;
+  font-size: 10px;
+  color: gray;
+}
+
+/* about */
+.about-container{
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: black;
+  z-index: 1000;
+
+}
+.about{
+  width: 600px;
+  min-height: 300px;
+  padding: 35px 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -250px;
+  margin-top: -150px;
+  color: black;
+  background: white;
+  font-size: 15px;
+  z-index: 1111;
+}
+.about a:link, .about a.visited{
+  color: #c00;
+}
+.closed{
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  background:white url(../images/cross.png) no-repeat center center;
+  cursor: pointer;
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  .header-container,
+  .project-content,
+  .footer{
+    width: 738px;
+  }
+  .nav ul li:nth-child(1),
+  .nav ul li:nth-child(2),
+  .nav ul li:nth-child(3){
+    display: none;
+  }
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .header-container,
+  .project-content,
+  .footer{
+    width: 962px;
+  }
+  .nav ul li:nth-child(1),
+  .nav ul li:nth-child(2),
+  .nav ul li:nth-child(3){
+    display: none;
+  }
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  .header-container,
+  .project-content,
+  .footer{
+    width: 1170px;
+  }
+  .nav ul li:nth-child(1),
+  .nav ul li:nth-child(2),
+  .nav ul li:nth-child(3){
+    display: inline-block;
+  }
+}
+
+
