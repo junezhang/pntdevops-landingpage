@@ -51,7 +51,6 @@
 				<div class="tags">
 					<span>Quick Search by tags:</span>
 					<ul id="projectfilter">
-						<li><a href="#" class="all">All</a></li>
 						<li><a href="#" class="project-tools">Project Management</a></li>
 						<li><a href="#" class="development-tools">Development Tools</a></li>
 	                    <li><a href="#" class="testing-tools">Testing Tools</a></li>
@@ -356,21 +355,26 @@
         $('.project').each(function(card) {
           var $this = $(this);
           if (!re.test($this.find('.title').text()) && !re.test($this.find('.intro').text())) {
-            $this.hide();
+            $this.fadeOut();
           } else {
             if ($this.is(':hidden')) {
-              $this.show();
+              $this.fadeIn();
             }
           }
         });
       });
 
       $('#projectfilter').on('click','a', function() {
-        if (this.className === 'all') {
-          $('.projectlist').find('.project').show();
-        } else {
-          $('.projectlist').find('.project').filter('.'+ this.className).show().end().not('.'+ this.className).hide();
-        }
+      	var tag = $(this).parent();
+      	var projects = $('.projectlist').find('.project');
+      	if (tag.is('.active')) {
+      	  projects.fadeIn();
+      	  tag.removeClass('active');
+      	} else {
+      	  projects.filter('.'+ this.className).fadeIn()
+      	    .end().not('.'+ this.className).fadeOut();
+          tag.addClass('active').siblings('.active').removeClass('active');
+      	}
       });
     });
     
