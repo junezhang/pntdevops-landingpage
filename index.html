@@ -353,30 +353,54 @@
 		$('.closed').click(function(){
 			$('#about-modal').hide();
 		})
-		$('#search-box').on('keyup', function() {
+	  $('#search-box').on('keyup', function() {
         var keyword = this.value.trim();
         var re = new RegExp(keyword, 'i');
+        var activeTag = $('#projectfilter').children('.active');
         $('.project').each(function(card) {
           var $this = $(this);
+          // not mapping the key words
           if (!re.test($this.find('.title').text()) && !re.test($this.find('.intro').text())) {
             $this.fadeOut();
-          } else {
-            if ($this.is(':hidden')) {
-              $this.fadeIn();
+          } else {// matching the key words
+          	if (activeTag.length) {// there is active tag.
+              if ($this.is('.' + activeTag.children()[0].className) && $this.is(':hidden')) {
+                $this.fadeIn();
+              }
+            } else {
+              if ($this.is(':hidden')) {
+                $this.fadeIn();
+              }
             }
           }
         });
       });
 
       $('#projectfilter').on('click','a', function() {
+      	var _this = this;
       	var tag = $(this).parent();
       	var projects = $('.projectlist').find('.project');
+      	var keyword = $('#search-box').val().trim();
+      	var re = new RegExp(keyword, 'i');
       	if (tag.is('.active')) {
-      	  projects.fadeIn();
-      	  tag.removeClass('active');
+          if (keyword.length) {// there is keyword.
+            projects.filter(function() {
+              return re.test($(this).find('.title').text()) || re.test($(this).find('.intro').text());
+            }).fadeIn();
+      	    tag.removeClass('active');
+          } else {
+      	    projects.fadeIn();
+      	    tag.removeClass('active');
+      	  }
       	} else {
-      	  projects.filter('.'+ this.className).fadeIn()
-      	    .end().not('.'+ this.className).hide();
+      	  projects.filter( function() {
+      	  	if (keyword.length) {// there is keyword.
+      	  	  return $(this).is('.'+ _this.className)
+      	  	    && (re.test($(this).find('.title').text()) || re.test($(this).find('.intro').text()));
+      	  	} else {
+              return $(this).is('.'+ _this.className);
+      	  	}
+      	  }).fadeIn().end().not('.'+ _this.className).hide();
           tag.addClass('active').siblings('.active').removeClass('active');
       	}
       });
