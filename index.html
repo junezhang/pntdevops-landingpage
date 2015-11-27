@@ -3,343 +3,347 @@
 	<meta charset='UTF-8'>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Engineering Tools - powered by PnT DevOps</title>
-	<link rel="stylesheet" type="text/css" href="css/project.css">
+	<link href="stylesheet.css" type="text/css" rel="stylesheet">
+	<link href="icons.css" type="text/css" rel="stylesheet">
 </head>
 <body>
 
-	<header class='header-nobanner'>
-		<div class="header-container">
-			<div class="logo-container"></div>
-			
-			<span class='logo-title'>
-				Engineering Tools
-			</span>
-			<div class='nav'>
-				<ul>
-					<li id='about'>About Engineering Tools</li>
-				</ul>
-				</div>
+<header>
+	<div class="header-container">
+		<div class="logo-container">
+			Engineering Tools
 		</div>
-	</header>
-	<div id="about-modal" style='display:none'>
-		<div class="about-container"></div>
-		<div class="about">
-			<div class="closed"></div>
-			<p>
-				Red Hat Engineering Tools are a suite of services and applications for Research and Development to produce Red Hat products.
-			</p>
-			<p>
-				PnT DevOps is the team accountable for Engineering Tools.
-			</p>
-			<hr>
-			<p>
-				To report issues or to request new accounts or services in Engineering Tools, create a ticket on the Engineering Operations queue by emailing <a href="mailto:eng-ops@redhat.com">eng-ops@redhat.com</a> 
-			</p>
-			<p>
-				Additionally, all known service outages for Engineering Tools are communicated via <a href="http://post-office.corp.redhat.com/archives/outage-list/">outage-list</a>
-			</p>	
-			<p>
-				Any other issues you can contact us by emailing <a href='mailto:pnt-devops@redhat.com'>pnt-devops@redhat.com</a>
-			</p>
+		<div class='nav' id='about'>
+			About Engineering Tools
 		</div>
 	</div>
-
-	<div class="project-container">
-		<div class="project-content">
-			<div class="filter">
-				<input placeholder='Quick search a project' id="search-box">
-				<div class="tags">
-					<span>Quick Search by tags:</span>
-					<ul id="projectfilter">
-						<li><a href="#" class="project-tools">Project Management</a></li>
-						<li><a href="#" class="development-tools">Development Tools</a></li>
-	                    <li><a href="#" class="testing-tools">Testing Tools</a></li>
-	                    <li><a href="#" class="release-tools">Release Tools</a></li>
-	                    <li><a href="#" class="docs-tools">Docs Tools</a></li>
-	                    <li><a href="#" class="process-tools">Process Management</a></li>
-	                    <li><a href="#" class="license">License</a></li>
-	                    <li><a href="#" class="translation">Translation</a></li>
-	                    <li><a href="#" class="monitoring">Monitoring</a></li>
-					</ul>
-				</div>
-			</div>
-			
-			<div class='projectlist'>
-				<a href='https://pkgwrangler.eng.bos.redhat.com/'>
-					<div class='project development-tools'>
-						<div class="title">Package Wrangler</div>
-						<div class="intro">Package license and crypto tracking</div>
-					</div>
-				</a>
-
-				<a href='https://beaker.engineering.redhat.com/'>
-					<div class='project testing-tools'>
-						<div class="title">Beaker</div>
-						<div class="intro">Hardware inventory & test lab automation</div>
-					</div>
-				</a>
-
-				<a href='https://brewweb.devel.redhat.com/'>
-					<div class='project development-tools'>
-						<div class="title">Brew</div>
-						<div class="intro">Package build system</div>
-					</div>
-				</a>
-
-				<a href='http://brewtap.app.eng.bos.redhat.com/'>
-					<div class='project development-tools'>
-						<div class="title">BrewTap</div>
-						<div class="intro">BREW package analyzer</div>
-					</div>
-				</a>
-
-				<a href='https://errata.devel.redhat.com/errata/rdiffcontrol.cgi'>
-					<div class='project testing-tools'>
-						<div class="title">RPMDiff</div>
-						<div class="intro">RPM binary analyzer</div>
-					</div>
-				</a>
-
-				<a href='https://bugzilla.redhat.com/'>
-					<div class='project development-tools testing-tools'>
-						<div class="title">Bugzilla</div>
-						<div class="intro">Bug tracking</div>
-					</div>
-				</a>
-
-				<!--
-				<a href='http://bzutils.engineering.redhat.com/'>
-					<div class='project'>
-						<div class="title">Bugbot</div>
-						<div class="intro">Flags Changes in Bugzilla</div>
-					</div>
-				</a>-->
-
-				<a href='https://errata.devel.redhat.com/errata'>
-					<div class='project testing-tools'>
-						<div class="title">Errata Tool</div>
-						<div class="intro">Erratums</div>
-					</div>
-				</a>
-
-				<a href='http://nest.test.redhat.com/mnt/tpsdist/'>
-					<div class='project testing-tools'>
-						<div class="title">TPS</div>
-						<div class="intro">Test package sanity</div>
-					</div>
-				</a>
-
-				<a href='https://tcms.engineering.redhat.com/'>
-					<div class='project testing-tools'>
-						<div class="title">TCMS</div>
-						<div class="intro">Test case management system</div>
-					</div>
-				</a>				
-
-				<a href='https://ackviewer.engineering.redhat.com'>
-					<div class='project project-tools'>
-						<div class="title">ACK View</div>
-						<div class="intro">Ack process viewer</div>
-					</div>
-				</a>
-
-				<a href='http://pub.devel.redhat.com/pub/home'>
-					<div class='project release-tools'>
-						<div class="title">Pub</div>
-						<div class="intro">Software publication system</div>
-					</div>
-				</a>
-
-				<a href='https://pdc.engineering.redhat.com/'>
-					<div class='project project-tools'>
-						<div class="title">PDC</div>
-						<div class="intro">Product metadata repository</div>
-					</div>
-				</a>
-
-				<a href='http://engineering.redhat.com/pp'>
-					<div class='project project-tools'>
-						<div class="title">Product Page</div>
-						<div class="intro">Product information and schedules for product teams</div>
-					</div>
-				</a>
-
-				<a href='https://pelc.engineering.redhat.com'>
-					<div class='project license'>
-						<div class="title">PELC</div>
-						<div class="intro">Product export and license control</div>
-					</div>
-				</a>
-
-				<a href='http://pkgs.devel.redhat.com/cgit/'>
-					<div class='project development-tools'>
-						<div class="title">User Git</div>
-						<div class="intro">User GIT repository</div>
-					</div>
-				</a>
-
-				<a href='http://pkgs.devel.redhat.com/cgit/'>
-					<div class='project development-tools'>
-						<div class="title">dist-git</div>
-						<div class="intro">Product ready enterprise GIT repository</div>
-					</div>
-				</a>
-
-				<a href='https://code.engineering.redhat.com/'>
-					<div class='project development-tools'>
-						<div class="title">Gerrit</div>
-						<div class="intro">Code review</div>
-					</div>
-				</a>
-
-				<a href='http://svn.devel.redhat.com'>
-					<div class='project development-tools'>
-						<div class="title">SVN</div>
-						<div class="intro">SVN version control</div>
-					</div>
-				</a>
-
-				<a href='https://vdb.engineering.redhat.com/'>
-					<div class='project development-tools'>
-						<div class="title">Virtual DB</div>
-						<div class="intro">Virtual databases of engineering tools</div>
-					</div>
-				</a>
-
-				<a href='http://w3c.englab.bne.redhat.com/w3c-validator/'>
-					<div class='project development-tools'>
-						<div class="title">W3C Validator</div>
-						<div class="intro">Markup validator</div>
-					</div>
-				</a>
-
-				<a href='https://engineering.redhat.com/pnt/'>
-					<div class='project project-tools'>
-						<div class="title">PnT Portal</div>
-						<div class="intro">Products and Technologies portal</div>
-					</div>
-				</a>
-
-				<a href='https://people.engineering.redhat.com/'>
-					<div class='project process-tools'>
-						<div class="title">People</div>
-						<div class="intro">Organisational chart</div>
-					</div>
-				</a>
-
-				<a href='https://projects.engineering.redhat.com'>
-					<div class='project project-tools'>
-						<div class="title">PnT JIRA</div>
-						<div class="intro">Project management</div>
-					</div>
-				</a>
-
-				<a href='https://docs.engineering.redhat.com'>
-					<div class='project docs-tools'>
-						<div class="title">PnT Confluence</div>
-						<div class="intro">Project documentation</div>
-					</div>
-				</a>
-
-				<a href='https://engineering.redhat.com/rt/index.html'>
-					<div class='project process-tools'>
-						<div class="title">Request Tracker</div>
-						<div class="intro">engineering ticket system</div>
-					</div>
-				</a>
-
-				<a href='https://maitai.engineering.redhat.com/'>
-					<div class='project process-tools'>
-						<div class="title">Maitai 1 - BPMS5</div>
-						<div class="intro">Business process engine based on BPMS5</div>
-					</div>
-				</a>
-
-				<a href='https://maitai-bpms.engineering.redhat.com'>
-					<div class='project process-tools'>
-						<div class="title">Maitai 2 - BPMS6</div>
-						<div class="intro">Business process engine based on BPMS6</div>
-					</div>
-				</a>
-
-				<a href='https://vault.engineering.redhat.com/'>
-					<div class='project process-tools'>
-						<div class="title">Vault</div>
-						<div class="intro">Sign-off request system</div>
-					</div>
-				</a>
-
-				<a href='https://support.engineering.redhat.com/'>
-					<div class='project process-tools'>
-						<div class="title">Charnet</div>
-						<div class="intro">SysOps status dashboard</div>
-					</div>
-				</a>
-
-				<a href='https://engineering.redhat.com/trac/'>
-					<div class='project docs-tools'>
-						<div class="title">Trac</div>
-						<div class="intro">Old trac instance - Mojo should used</div>
-					</div>
-				</a>
-
-				<a href='https://translate.engineering.redhat.com/'>
-					<div class='project translation'>
-						<div class="title">Zanata</div>
-						<div class="intro">Web based localization management</div>
-					</div>
-				</a>
-
-				<a href='https://analytics.engineering.redhat.com/piwik/'>
-					<div class='project development-tools'>
-						<div class="title">Piwik App Analytics</div>
-						<div class="intro">Web analytics</div>
-					</div>
-				</a>
-
-				<a href='https://zabbix.infra.prod.eng.rdu2.redhat.com/zabbix/'>
-					<div class='project monitoring'>
-						<div class="title">Zabbix Monitoring</div>
-						<div class="intro">RDU application monitoring</div>
-					</div>
-				</a>
-
-				<a href='http://download.devel.redhat.com/'>
-					<div class='project development-tools'>
-						<div class="title">Download Devel</div>
-						<div class="intro">Devel file trees</div>
-					</div>
-				</a>	
-				
-				<div class="clearfix"></div>
-			</div>
-			
+</header>
+<div class="filter-container">
+	<div class="filter">
+		<input placeholder='Quick Search' id="search-box">
+		<div class="tags">
+			<span>Quick filter by tags:</span>
+			<ul id="projectfilter">
+				<li><a href="#" class="project-tools">Project Management</a></li>
+				<li><a href="#" class="development-tools">Development Tools</a></li>
+	            <li><a href="#" class="testing-tools">Testing Tools</a></li>
+	            <li><a href="#" class="release-tools">Release Tools</a></li>
+	            <li><a href="#" class="docs-tools">Docs Tools</a></li>
+	            <li><a href="#" class="process-tools">Process Management</a></li>
+	            <li><a href="#" class="miscellaneous">Miscellaneous</a></li>
+			</ul>
 		</div>
 	</div>
+</div>
+<div id="about-modal" style='display:none'>
+	<div class="about-container"></div>
+	<div class="about">
+		<div class="closed"></div>
+		<p>
+			Red Hat Engineering Tools are a suite of services and applications for Research and Development to produce Red Hat products.
+		</p>
+		<p>
+			PnT DevOps is the team accountable for Engineering Tools.
+		</p>
+		<hr>
+		<p>
+			To report issues or to request new accounts or services in Engineering Tools, create a ticket on the Engineering Operations queue by emailing <a href="mailto:eng-ops@redhat.com">eng-ops@redhat.com</a> 
+		</p>
+		<p>
+			Additionally, all known service outages for Engineering Tools are communicated via <a href="#">outage-list</a>
+		</p>	
+		<p>
+			Any other issues you can contact us by emailing <a href='mailto:pnt-devops@redhat.com'>pnt-devops@redhat.com</a>
+		</p>
+	</div>
+</div>
 
-	<footer>
-		<div class="footer">
-			<div class="footer-logo">
-				<img src="images/logo.png">
-			</div>
-			<div class="footer-text">
-				Powered by <a href='https://mojo.redhat.com/groups/pnt-devops'>PnT DevOps</a>
-				<div>Internal Use Only</div>
-			</div>
+<div class="project-container">
+	<div class="project-content">	
+		<div class='projectlist'>
 			
+			<a href="https://docs.engineering.redhat.com" target='_blank'>
+				<div class='project docs-tools' id='Confluence'>
+					<div class="title">PnT Confluence</div>
+					<div class="intro">Project documentation</div>
+					<div class="icon"></div>
+				</div>
+			</a>
+			
+			<a href="https://projects.engineering.redhat.com" target='_blank'>
+				<div class='project project-tools' id='jira'>
+					<div class="title">PnT JIRA</div>
+					<div class="intro">Project management</div>
+					<div class="icon"></div>
+				</div>
+			</a>
+			
+			<a href="https://beaker.engineering.redhat.com/" target='_blank'>
+				<div class='project testing-tools' id='beaker'>
+					<div class="title">Beaker</div>
+					<div class="intro">Hardware inventory and test lab automation</div>
+					<div class="icon"></div>
+				</div>
+			</a>
+			
+			<a href="https://bugzilla.redhat.com/" target='_blank'>
+				<div class='project project-tools development-tools testing-tools' id='bugzilla'>
+					<div class="title">Bugzilla</div>
+					<div class="intro">Bug tracking</div>
+					<div class="icon"></div>
+				</div>
+			</a>
+			
+			<a href="http://errata.devel.redhat.com/" target='_blank'>
+				<div class='project development-tools testing-tools release-tools' id='erratatool'>
+					<div class="title">Errata Tool</div>
+					<div class="intro">Preparing software to ship</div>
+					<div class="icon"></div>
+				</div>
+			</a>
+			
+			<a href="https://people.engineering.redhat.com/" target='_blank'>
+				<div class='project miscellaneous' id='people'>
+					<div class="title">People</div>
+					<div class="intro">Organisational chart</div>
+					<div class="icon"></div>
+				</div>
+			</a>
+			
+			<a href="http://engineering.redhat.com/pp" target='_blank'>
+				<div class='project project-tools' id='productpage'>
+					<div class="title">Product Page</div>
+					<div class="intro">Product information and schedules for product teams</div>
+					<div class="icon"></div>
+				</div>
+			</a>
+			
+			<a href="https://engineering.redhat.com/pnt/" target='_blank'>
+				<div class='project docs-tools' id='portal'>
+					<div class="title">PnT Portal</div>
+					<div class="intro">Products and Technologies portal</div>
+					<div class="icon"></div>
+				</div>
+			</a>
+			
+			<a href="https://engineering.redhat.com/rt/index.html" target='_blank'>
+				<div class='project project-tools' id='rt'>
+					<div class="title">Request Tracker</div>
+					<div class="intro">Engineering ticket system</div>
+					<div class="icon"></div>
+				</div>
+			</a>
+			
+			<a href="http://brewweb.devel.redhat.com/" target='_blank'>
+				<div class='project release-tools' id='brew'>
+					<div class="title">Brew</div>
+					<div class="intro">Package build system</div>
+					<div class="icon"></div>
+				</div>
+			</a>
+			
+			<a href="https://vault.engineering.redhat.com/" target='_blank'>
+				<div class='project process-tools' id='vault'>
+					<div class="title">Vault</div>
+					<div class="intro">Sign-off tracking tool</div>
+					<div class="icon"></div>
+				</div>
+			</a>
+			
+			<a href="https://engineering.redhat.com/metrics/" target='_blank'>
+				<div class='project project-tools' id='ackview'>
+					<div class="title">ACK View</div>
+					<div class="intro">Ack process viewer</div>
+					<div class="icon"></div>
+				</div>
+			</a>
+			
+			<a href="http://brewtap.app.eng.bos.redhat.com/" target='_blank'>
+				<div class='project testing-tools' id='bewtap'>
+					<div class="title">BrewTap</div>
+					<div class="intro">Brew package analyzer</div>
+					<div class="icon"></div>
+				</div>
+			</a>
+			
+			<a href="https://support.engineering.redhat.com/" target='_blank'>
+				<div class='project process-tools' id='charnet'>
+					<div class="title">Charnet</div>
+					<div class="intro">SysOps status dashboard</div>
+					<div class="icon"></div>
+				</div>
+			</a>
+			
+			<a href="http://pkgs.devel.redhat.com/cgit/" target='_blank'>
+				<div class='project release-tools' id='distgit'>
+					<div class="title">dist-git</div>
+					<div class="intro">Product ready enterprise git repository</div>
+					<div class="icon"></div>
+				</div>
+			</a>
+			
+			<a href="https://code.engineering.redhat.com/" target='_blank'>
+				<div class='project development-tools' id='gerrit'>
+					<div class="title">Gerrit</div>
+					<div class="intro">Code review</div>
+					<div class="icon"></div>
+				</div>
+			</a>
+			
+			<a href="https://maitai.engineering.redhat.com" target='_blank'>
+				<div class='project process-tools' id='maitaiv1'>
+					<div class="title">Maitai 1 - BPMS5</div>
+					<div class="intro">Business process engine based on BPMS5</div>
+					<div class="icon"></div>
+				</div>
+			</a>
+			
+			<a href="https://maitai-bpms.engineering.redhat.com" target='_blank'>
+				<div class='project process-tools' id='maitaiv2'>
+					<div class="title">Maitai 2 - BPMS6</div>
+					<div class="intro">Business process engine based on BPMS6</div>
+					<div class="icon"></div>
+				</div>
+			</a>
+			
+			<a href="https://pkgwrangler.eng.bos.redhat.com" target='_blank'>
+				<div class='project testing-tools' id='wrangler'>
+					<div class="title">Package Wrangler</div>
+					<div class="intro">Package license and crypto tracking</div>
+					<div class="icon"></div>
+				</div>
+			</a>
+			
+			<a href="https://pdc.engineering.redhat.com/" target='_blank'>
+				<div class='project release-tools' id='pdc'>
+					<div class="title">PDC</div>
+					<div class="intro">Product metadata repository</div>
+					<div class="icon"></div>
+				</div>
+			</a>
+			
+			<a href="https://pelc.engineering.redhat.com" target='_blank'>
+				<div class='project testing-tools' id='pelc'>
+					<div class="title">PELC</div>
+					<div class="intro">Product export and license control</div>
+					<div class="icon"></div>
+				</div>
+			</a>
+			
+			<a href="https://analytics.engineering.redhat.com/piwik" target='_blank'>
+				<div class='project miscellaneous' id='piwik'>
+					<div class="title">Piwik App Analytics</div>
+					<div class="intro">Web analytics</div>
+					<div class="icon"></div>
+				</div>
+			</a>
+			
+			<a href="http://pub.devel.redhat.com/pub/home" target='_blank'>
+				<div class='project release-tools' id='pub'>
+					<div class="title">Pub</div>
+					<div class="intro">Software publication system</div>
+					<div class="icon"></div>
+				</div>
+			</a>
+			
+			<a href="https://errata.devel.redhat.com/errata/rdiffcontrol.cgi" target='_blank'>
+				<div class='project testing-tools' id='rpmdiff'>
+					<div class="title">RPMDiff</div>
+					<div class="intro">RPM binary analyzer</div>
+					<div class="icon"></div>
+				</div>
+			</a>
+			
+			<a href="http://svn.devel.redhat.com" target='_blank'>
+				<div class='project development-tools' id='svn'>
+					<div class="title">SVN</div>
+					<div class="intro">SVN version control</div>
+					<div class="icon"></div>
+				</div>
+			</a>
+			
+			<a href="https://tcms.engineering.redhat.com/" target='_blank'>
+				<div class='project testing-tools' id='nitrate'>
+					<div class="title">Nitrate</div>
+					<div class="intro">Test case management system</div>
+					<div class="icon"></div>
+				</div>
+			</a>
+			
+			<a href="http://nest.test.redhat.com/mnt/tpsdist/" target='_blank'>
+				<div class='project testing-tools' id='tps'>
+					<div class="title">TPS</div>
+					<div class="intro">Test package sanity</div>
+					<div class="icon"></div>
+				</div>
+			</a>
+			
+			<a href="https://engineering.redhat.com/trac/" target='_blank'>
+				<div class='project docs-tools' id='trac'>
+					<div class="title">Trac</div>
+					<div class="intro">Old trac instance - Mojo should used</div>
+					<div class="icon"></div>
+				</div>
+			</a>
+			
+			<a href="http://git.engineering.redhat.com/" target='_blank'>
+				<div class='project development-tools' id='git1'>
+					<div class="title">User Git</div>
+					<div class="intro">User git repository</div>
+					<div class="icon"></div>
+				</div>
+			</a>
+			
+			<a href="https://vdb.engineering.redhat.com/" target='_blank'>
+				<div class='project miscellaneous' id='vdb'>
+					<div class="title">Virtual DB</div>
+					<div class="intro">Virtual databases of engineering tools</div>
+					<div class="icon"></div>
+				</div>
+			</a>
+			
+			<a href="http://w3c.englab.bne.redhat.com/w3c-validator/" target='_blank'>
+				<div class='project development-tools' id='w3c'>
+					<div class="title">W3C Validator</div>
+					<div class="intro">Markup validator</div>
+					<div class="icon"></div>
+				</div>
+			</a>
+			
+			<a href="https://zabbix.infra.prod.eng.rdu2.redhat.com/zabbix/" target='_blank'>
+				<div class='project miscellaneous' id='zabbix'>
+					<div class="title">Zabbix Monitoring</div>
+					<div class="intro">RDU application monitoring</div>
+					<div class="icon"></div>
+				</div>
+			</a>
+			
+			<a href="https://translate.engineering.redhat.com/" target='_blank'>
+				<div class='project miscellaneous' id='zanata'>
+					<div class="title">Zanata</div>
+					<div class="intro">Web based localization management</div>
+					<div class="icon"></div>
+				</div>
+			</a>
+			
+			<div class="clearfix"></div>
 		</div>
-	</footer>	
+	</div>
+</div>
 
-	
-	
+<footer>
+	<div class="footer">
+		<div class="footer-logo">
+			<img src="images/logo.png">
+		</div>
+		<div class="footer-text">
+			Powered by <a href='https://mojo.redhat.com/groups/pnt-devops'>PnT DevOps</a>
+			<div>Internal Use Only</div>
+		</div>
+	</div>
+</footer>	
 
-
-
-
-
-
-
-<script src='http://code.jquery.com/jquery-1.11.3.min.js'></script>
+<script src='scripts/jquery-1.11.3.min.js'></script>
 <script type="text/javascript" src="https://projects.engineering.redhat.com/s/d41d8cd98f00b204e9800998ecf8427e/en_USxau2iw-1988229788/6252/44/1.4.7/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?collectorId=25f0cc6e"></script>
 <script>
 	$(function(){
@@ -372,13 +376,29 @@
       	  tag.removeClass('active');
       	} else {
       	  projects.filter('.'+ this.className).fadeIn()
-      	    .end().not('.'+ this.className).fadeOut();
+      	    .end().not('.'+ this.className).hide();
           tag.addClass('active').siblings('.active').removeClass('active');
       	}
       });
     });
-    
-    
-</script>	
+</script>
+<!-- Piwik -->
+<script type="text/javascript">
+	var pkBaseURL = (("https:" == document.location.protocol) ? "https://analytics.engineering.redhat.com/piwik/" : "http://analytics.engineering.redhat.com/piwik/");
+	document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+	try {
+		var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 22);
+		piwikTracker.trackPageView();
+		piwikTracker.enableLinkTracking();
+	} catch (err) {}
+</script>
+<noscript>
+	<p>
+		<img src="http://analytics.engineering.redhat.com/piwik/piwik.php?idsite=22" style="border:0" alt="" />
+	</p>
+</noscript>
+<!-- End Piwik Tracking Code -->
 </body>
 </html>

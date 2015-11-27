@@ -11,88 +11,42 @@
     text-rendering: optimizeLegibility;
 }
 *{
-	  -webkit-box-sizing: border-box;
-	  -moz-box-sizing: border-box;
-  	box-sizing: border-box;
-  	margin: 0;
-  	padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 body{
-	font-family: 'Overpass',Helvetica,Arial,sans-serif;
+  font-family: 'Overpass',Helvetica,Arial,sans-serif;
   font-size: 18px;
-  color: #1e1e1e;
-  background: #ccc;
+  color: #000;
   overflow-y: scroll;
 }
 
 /* header */
 header{
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-}
-.header-nobanner{
-  width: 100%;
-  background: url('../images/banner-bg.png') no-repeat center center;
-  background-size: cover cover;
+  background: #252527;
   position: static;
 }
 .header-container{
-  width: 1170px;
   margin: 0 auto;
   padding: 0;
-  position: relative;
 }
 .logo-container{
-  width: 250px;
-  height: 100px;
-  background: black;
-  opacity: 0.2;
-  padding-top: 20px;
-}
-.logo{
-  position: absolute;
-  left: 20px;
-  top: 20px;
-}
-.logo-title{
-  position: absolute;
-  left: 0px;
-  top: 32px;
+  height: 60px;
   display: inline-block;
   font-size: 26px;
-  margin-left: 20px;
   color: white;
+  line-height: 60px;
 }
 .nav{
-  position: absolute;
-  right: 0;
-  top: 40px;
+  float: right;
   font-size: 17px;
   color: white;
-  background: none;
-  border: none;
   cursor: pointer;
+  height: 60px;
+  line-height: 60px;
 }
-
-.nav ul li{
-  list-style: none;
-  display: inline-block;
-  margin-right: 25px;
-}
-.nav ul li:last-child{
-  margin-right: 0;
-}
-.nav a:link,
-.nav a:visited{
-  color: white;
-}
-
-.nav ul li:hover{
-  border-bottom: dotted 2px white;
-}
-
 a:link, a:visited{
   text-decoration: none;
   color: black;
@@ -104,15 +58,13 @@ a:hover{
 /* Project List */
 .project-container{
   width: 100%;
-  background:#c2c5ba url('../images/c1.png') center top no-repeat;
-  background-size: cover cover;
+  background:#c2c5ba url('images/c1.jpg') center top no-repeat;
+  background-size: cover;
   height: auto;
   min-height: 580px;
   padding: 30px 0;
 }
-
 .project-content{
-  width: 1170px;
   margin: 0px auto;
 }
 .project-title{
@@ -122,54 +74,46 @@ a:hover{
   text-transform: uppercase;
 }
 .projectlist{
-  margin: 1.2rem auto;
+  margin: 1rem auto;
 }
 .project{
-  background: rgba(255,255,255,0.9);
-  width: 147px;
-  height: 140px;
-  padding: 10px;
+  background: #fff;
+  width: 200px;
+  height: 160px;
+  padding: 15px;
   float: left;
-  margin: 10px 15px 10px 0;
-}
+  margin: 10px 15px 15px 15px;
+  position: relative;
 
-a:hover .project{
-  border: solid 3px #c00;
-  padding: 7px;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: color, background-color,box-shadow;
+  transition-property: color, background-color,box-shadow;
 }
-a:hover .intro{
-  color: #646464;
+.project:hover, .project:focus, .project:active {
+  background-color: #c00;
+  color: white;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
 }
 
 .project .intro{
   font-size: 14px;
   color: #888;
   margin-top: 10px;
+  z-index: 1;
+  width: 130px;
 }
-
-
-.bgimage-c2{
-  background: #fff;
-}
-
-.bgimage-c2 .project{
-  background: #eee;
-}
-
-
-
-.bgimage-c3{
-  background: url('../images/c1.png') center bottom;
-}
-
-
-
-/* carousel banner */
-.item{
-  height: 300px;
-}
-.item img{
-  width: 100%;
+.project:hover .intro{
+  color: #eee;
 }
 
 /* footer */
@@ -180,7 +124,6 @@ footer{
   position: absolute;
 }
 .footer{
-  width: 1170px;
   padding-top: 20px;
   margin: 0 auto;
 }
@@ -246,8 +189,11 @@ footer{
 .about hr{
   border: solid 1px #ccc;
 }
-.about a:link, .about a.visited{
+.about p a:link, .about p a.visited{
   color: #c00;
+}
+.about p a:hover{
+  color: #a30000;
 }
 .closed{
   width: 30px;
@@ -256,7 +202,7 @@ footer{
   position: absolute;
   right: -10px;
   top: -10px;
-  background:white url(../images/cross.png) no-repeat center center;
+  background:white url('images/cross.png') no-repeat center center;
   cursor: pointer;
 }
 .clearfix{
@@ -264,8 +210,14 @@ footer{
 }
 
 /* filter */
+.filter-container{
+  padding: 20px;
+  width: 100%;
+  background: url('images/banner-bg.png') no-repeat center center;
+  background-size: cover;
+}
 .filter{
-  margin: 10px 0px 25px;
+  margin: 10px auto;
 }
 .filter li{
   margin: 5px 0;
@@ -273,8 +225,11 @@ footer{
 input{
   width: 1119px;
   height: 45px;
-  padding: 5px;
+  line-height: 45px;
+  padding-left: 40px;
   font-size: 16px;
+  background:#fff url('images/search.png') no-repeat 10px center;
+  border: solid 1px #bbb;
 }
 .tags{
   font-size: 14px;
@@ -284,38 +239,63 @@ input{
 .tags ul,
 .tags ul li{
   display: inline-block;
+  color: white;
 }
 .tags ul li{
   margin: 0px 2px;
   padding: 2px 5px;
 }
 .tags .active {
-  color: #fff;
-  background-color: #CB0000;
-  border-radius: 4px;
+  background-color: #000;
 }
 .tags .active a {
   color: #fff;
+}
+.tags a{
+  color: white;
+}
+.tags a:hover{
+  border-bottom: dotted 1px #fff;
 }
 .tags ul{
   width: 975px
 }
 .tags span{ 
   vertical-align: top;
+  margin-top: 2px;
 }
+
+
+/* icons */
+
+.icon{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  z-index: 0;
+  background: url(images/blank.png) no-repeat right top;
+}
+.project:hover .icon{
+  background-position: right bottom;
+}
+
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
   .header-container,
   .project-content,
-  .footer{
+  .footer,
+  .filter,
+  input{
     width: 738px;
   }
-  input{
-    width: 633px;
-  }
   .tags ul{
-    width: 490px;
+    width: 580px;
+  }
+  .projectlist{
+    width: 690px;
   }
 
 }
@@ -324,15 +304,16 @@ input{
 @media (min-width: 992px) {
   .header-container,
   .project-content,
-  .footer{
+  .footer,
+  .filter,
+  input{
     width: 962px;
   }
-
-  input{
-    width: 795px;
-  }
   .tags ul{
-    width: 650px;
+    width: 810px;
+  }
+  .projectlist{
+    width: 920px;
   }
 }
 
@@ -340,15 +321,16 @@ input{
 @media (min-width: 1200px) { 
   .header-container,
   .project-content,
-  .footer{
-    width: 1170px;
-  }
-
+  .footer,
+  .filter,
   input{
-    width: 1119px;
+    width: 1170px;
   }
   .tags ul{
     width: 975px;
+  }
+  .projectlist{
+    width: 1160px;
   }
 }
 

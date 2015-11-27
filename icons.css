@@ -1,0 +1,133 @@
+.project#Confluence .icon{
+  background: url(images/confluence.png) no-repeat right top;
+}
+
+.project#Confluence:hover .icon{
+  background-position: right bottom;
+}.project#jira .icon{
+  background: url(images/jira.png) no-repeat right top;
+}
+
+.project#jira:hover .icon{
+  background-position: right bottom;
+}.project#beaker .icon{
+  background: url(images/beaker.png) no-repeat right top;
+}
+
+.project#beaker:hover .icon{
+  background-position: right bottom;
+}.project#bugzilla .icon{
+  background: url(images/bugzilla.png) no-repeat right top;
+}
+
+.project#bugzilla:hover .icon{
+  background-position: right bottom;
+}.project#erratatool .icon{
+  background: url(images/erratatool.png) no-repeat right top;
+}
+
+.project#erratatool:hover .icon{
+  background-position: right bottom;
+}.project#people .icon{
+  background: url(images/people.png) no-repeat right top;
+}
+
+.project#people:hover .icon{
+  background-position: right bottom;
+}.project#productpage .icon{
+  background: url(images/product.png) no-repeat right top;
+}
+
+.project#productpage:hover .icon{
+  background-position: right bottom;
+}.project#rt .icon{
+  background: url(images/rt.png) no-repeat right top;
+}
+
+.project#rt:hover .icon{
+  background-position: right bottom;
+}.project#brew .icon{
+  background: url(images/brew.png) no-repeat right top;
+}
+
+.project#brew:hover .icon{
+  background-position: right bottom;
+}.project#vault .icon{
+  background: url(images/vault.png) no-repeat right top;
+}
+
+.project#vault:hover .icon{
+  background-position: right bottom;
+}.project#ackview .icon{
+  background: url(images/ackview.png) no-repeat right top;
+}
+
+.project#ackview:hover .icon{
+  background-position: right bottom;
+}.project#charnet .icon{
+  background: url(images/charnet.png) no-repeat right top;
+}
+
+.project#charnet:hover .icon{
+  background-position: right bottom;
+}.project#distgit .icon{
+  background: url(images/git.png) no-repeat right top;
+}
+
+.project#distgit:hover .icon{
+  background-position: right bottom;
+}.project#maitaiv1 .icon{
+  background: url(images/maitai.png) no-repeat right top;
+}
+
+.project#maitaiv1:hover .icon{
+  background-position: right bottom;
+}.project#maitaiv2 .icon{
+  background: url(images/maitai.png) no-repeat right top;
+}
+
+.project#maitaiv2:hover .icon{
+  background-position: right bottom;
+}.project#wrangler .icon{
+  background: url(images/wrangler.png) no-repeat right top;
+}
+
+.project#wrangler:hover .icon{
+  background-position: right bottom;
+}.project#piwik .icon{
+  background: url(images/piwik.png) no-repeat right top;
+}
+
+.project#piwik:hover .icon{
+  background-position: right bottom;
+}.project#nitrate .icon{
+  background: url(images/nitrate.png) no-repeat right top;
+}
+
+.project#nitrate:hover .icon{
+  background-position: right bottom;
+}.project#trac .icon{
+  background: url(images/trac.png) no-repeat right top;
+}
+
+.project#trac:hover .icon{
+  background-position: right bottom;
+}.project#git1 .icon{
+  background: url(images/git.png) no-repeat right top;
+}
+
+.project#git1:hover .icon{
+  background-position: right bottom;
+}.project#vdb .icon{
+  background: url(images/vdb.png) no-repeat right top;
+}
+
+.project#vdb:hover .icon{
+  background-position: right bottom;
+}.project#w3c .icon{
+  background: url(images/w3c.png) no-repeat right top;
+}
+
+.project#w3c:hover .icon{
+  background-position: right bottom;
+}
